@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;600;800;900&family=Bebas+Neue&display=swap');
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --font-bebas: "Bebas Neue", cursive;
+  --font-anton: "Anton", sans-serif;
+  --color-primary-red: #E23636;
+  --color-dark-red: #B11313;
+  --color-dark-bg: #03080F;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-outfit);
+  background-color: var(--color-dark-bg);
+  color: #f5f5f5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+canvas {
+  pointer-events: auto !important; /* Always allow 3D interaction */
+}
+
+/* Base heading font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bebas);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
