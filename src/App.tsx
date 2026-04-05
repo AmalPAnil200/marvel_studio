@@ -3,13 +3,13 @@ import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls, Float } from "@react-three/drei";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { SpiderWeb } from "./components/SpiderWeb";
-import img1 from "./assets/image/img-1.png";
-import img2 from "./assets/image/img-2.png";
-import img3 from "./assets/image/img-3.png";
-import img4 from "./assets/image/img-4.png";
-import imgTobey from "./assets/image/tobey.png";
-import imgAndrew from "./assets/image/andrew.png";
-import imgTom from "./assets/image/tom.png";
+import img1 from "@/assets/image/img-1.png";
+import img2 from "@/assets/image/img-2.png";
+import img3 from "@/assets/image/img-3.png";
+import img4 from "@/assets/image/img-4.png";
+import imgTobey from "@/assets/image/tobey.png";
+import imgAndrew from "@/assets/image/andrew.png";
+import imgTom from "@/assets/image/tom.png";
 
 const glassClasses =
   "bg-[#0A1931]/40 backdrop-blur-xl border border-[#E23636]/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] rounded-2xl";
