@@ -1,6 +1,6 @@
-import React, { Suspense, useRef } from "react";
+import { Suspense, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls, Float } from "@react-three/drei";
+import { OrbitControls, Float } from "@react-three/drei";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { SpiderWeb } from "./components/SpiderWeb";
 import img1 from "@/assets/image/img-1.png";

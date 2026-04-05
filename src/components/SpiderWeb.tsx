@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from "react";
+import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
@@ -111,9 +111,7 @@ export function SpiderWeb({ count = 200 }) {
         <bufferGeometry>
           <bufferAttribute
             attach="attributes-position"
-            count={count}
-            array={positions}
-            itemSize={3}
+            args={[positions, 3]}
           />
         </bufferGeometry>
         <pointsMaterial
@@ -126,7 +124,7 @@ export function SpiderWeb({ count = 200 }) {
       </points>
       <lineSegments ref={linesRef}>
         <bufferGeometry>
-          <bufferAttribute attach="attributes-position" args={[array, 3]} />
+          <bufferAttribute attach="attributes-position" args={[linePositions, 3]} />
         </bufferGeometry>
         <lineBasicMaterial color="#E23636" transparent opacity={0.25} />
       </lineSegments>
